@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/javascripts.js"></script>
+</head>
+<body>
+    <div class="canvasContainer">
+        <canvas id="canvas" width="400" height=400"></canvas>
+    </div>
+    <button id="pauseButton">Pause</button>
+    <button id="restartButton">Restart</button>
+    <script>
+        Game("canvas")
+            .setPauseButton('pauseButton')
+            .setRestartButton('restartButton')
+            .start();
+    </script>
+</body>
+</html>
